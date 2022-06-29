@@ -8,16 +8,20 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+  menu = false;
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
   goToHome(){
+    this.menu = false;
     this.router.navigate(['/', 'home']);
   }
 
   goToAddUpdate(){
+    this.menu = false;
     this.router.navigate(['/', 'add-update']);
   }
 
