@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-add-update',
   templateUrl: './add-update.component.html',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddUpdateComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+  ) { 
+    
+  }
 
   ngOnInit(): void {
+  }
+
+  openModal() {
+   
   }
 
 }

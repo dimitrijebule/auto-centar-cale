@@ -9,12 +9,12 @@ import { Router } from '@angular/router';
 export class SearchComponent implements OnInit {
 
   constructor(
-    // private router: Router
+    private router: Router
   ) {}
 
   ngOnInit(): void {}
 
-  // addNew = () => {
-  //   this.router.navigate(['/add-update']);
-  // }
+  addNew = () => {
+    this.router.navigate(['/add-update']);
+  }
 }

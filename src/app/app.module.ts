@@ -8,6 +8,9 @@ import { SearchComponent } from './components/search/search.component';
 import { AddUpdateComponent } from './components/add-update/add-update.component';
 import { ListComponent } from './components/list/list.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ModalDeleteComponent } from './components/modal-delete/modal-delete.component';
+
+
 
 @NgModule({
   declarations: [
@@ -16,11 +19,13 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     SearchComponent,
     AddUpdateComponent,
     ListComponent,
-    NavbarComponent
+    NavbarComponent,
+    ModalDeleteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

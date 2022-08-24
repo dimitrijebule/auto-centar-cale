@@ -25,12 +25,16 @@
           <textarea class="bg-indigo-50 px-4 py-2 outline-red-700 rounded-md w-full"></textarea>
         </div>
         <div>
+          <label class="block mb-1 text-gray-600 font-semibold">Količina</label>
+          <input type="number" class="bg-indigo-50 px-4 py-2 outline-red-700 rounded-md w-full" />
+        </div>
+        <div>
           <label class="block mb-1 text-gray-600 font-semibold">Cena</label>
           <input type="number" class="bg-indigo-50 px-4 py-2 outline-red-700 rounded-md w-full" />
         </div>
         <div class="w-full flex justify-around">
           <div>
-            <label class="block mb-1 text-gray-600 font-semibold">Kuca</label>
+            <label class="block mb-1 text-gray-600 font-semibold">Kuća</label>
             <input type="radio" class="accent-red-500 px-4 py-2 outline-red-700 rounded-md w-full" name="place"/>
           </div>
           <div>
@@ -38,10 +42,13 @@
             <input type="radio" class="accent-red-500 px-4 py-2 outline-red-700 rounded-md w-full"  name="place"/>
           </div>
         </div>
-
-      </div>
       <button class="mt-4 w-full bg-red-700 font-semibold py-2 rounded-md tracking-wide text-white">Dodaj</button>
+      <div>
+        <button class=" py-3 mt-2  text-lg rounded-lg font-medium focus:outline-none bg-white text-red-700">
+          <span class="cursor-pointer block mb-1 w-18 text-sm text-left text-red-700" (click)="openModal()" mat-mini-fab>Obriši deo</span>
+        </button>
+      </div>
+    </div>
     </div>
   </form>
-
 </div>
